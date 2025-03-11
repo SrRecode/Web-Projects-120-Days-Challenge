@@ -1,0 +1,123 @@
+/* Reset margin and padding for all elements, set box-sizing and font-family */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Container styling */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+
+/* Todo app styling */
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px ;
+    border-radius: 10px;
+}
+
+/* Header styling */
+.todo-app h2{
+    color: #003765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.todo-app img{
+    margin-left: 10px;
+}
+
+/* Row styling */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/* Input box styling */
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+/* Button styling */
+button{
+    border: none;
+    outline: none;
+    padding: 16px 30px;
+    background: rgb(57, 16, 222);
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* List item styling */
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+
+/* List item before pseudo-element styling */
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}
+
+/* Checked list item styling */
+ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+}
+
+/* Checked list item before pseudo-element styling */
+ul li.checked::before{
+    background-image: url(images/image_search_1686234205615.png);
+}
+
+/* Span (delete button) styling */
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    color: #555;
+}
+
+/* Span hover effect */
+ul li span:hover{
+    background-color: #edeef0;
+}
+
