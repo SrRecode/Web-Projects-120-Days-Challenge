@@ -1,0 +1,95 @@
+html,body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+width: 100vw;
+height: 100vh;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    
+    width:  85%;
+    height: 90%;
+    background: #dadadd;
+    border: 1px solid black;
+}
+
+#center{
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    transform: translate(-10%,-50%);
+    width: 55%;
+    height: 80%;
+    
+}
+
+.imagecontainer{
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+}
+
+img{
+    
+    height:100%;
+    
+    
+}
+
+.text{
+    position: absolute;
+    bottom: 15%;
+    left: -5%;
+    overflow: hidden;
+    width: 80%;
+    height: 100px;
+    z-index: 999;
+    border: 1px solid white;
+}
+
+.text h1{
+    font-family: monospace;
+position: absolute;
+font-size: 50px;
+white-space: nowrap;
+top: 100px;
+
+
+}
+#h3{
+    color: white;
+}
+.aside{
+    position: relative;
+    top: 17%;
+    left: 7%;
+    padding: 10px;
+    border-left: 1px solid black;
+}
+.aside h1{
+    
+    font-family:  monospace;
+}
+.secondaside{
+    position: absolute;
+    top: 47%;
+    left: 82%;
+}
+.secondaside h5{
+    position: absolute;
+    left: -50%;
+    top: -32px;
+    font-size: 22px;
+    padding: 10px;
+    border-left: 1px solid black;
+}
+.secondaside p{
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
