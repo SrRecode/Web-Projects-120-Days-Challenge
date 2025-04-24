@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.Left{
+    position: relative;
+    height: 100%;
+    width: 40%;
+    
+}
+.Right{
+    
+    height: 100%;
+    width: 60%;
+   
+}
+.Rtop{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    
+}
+.Rbottom{
+    height: 50%;
+    width: 100%;
+    background-image: url('/Images/pexels-markusspiske-1268129.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.rtopleft{
+    height: 100%;
+    width: 55%;
+    background-image: url(/Images/agata-create-4SbDro9ND5c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.rtopright{
+    height: 100%;
+    width: 45%;
+    background-image: url('/Images/fabrice-villard-Du41jIaI5Ww-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.leftsidenav{
+    display: flex;
+    height: 100;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.leftsidenav a{
+    text-decoration: none;
+    margin-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    
+}
+.leftsidenavrightside{
+    display: flex;
+    align-items: center;
+}
+.back{
+    
+    width: 5%;
+    height: 5%;
+    transition: .5s;
+}
+.back:hover{
+    background-color: rgb(0, 140, 255);
+    border-radius: 25px;
+}
+.twitter{
+    height: 30px;
+    transition: .8s;
+
+}
+.twitter:hover{
+    background-color: rgb(0, 140, 255);
+    border-radius: 25px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+.text h1{
+    font-size: 70px;
+}
+.text p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media (max-width:500px){
+    .main{
+        flex-direction: column;
+        
+        
+    }
+    .main .Left{
+        
+        width: 100%;
+        
+    }
+    .main .Right{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        
+    }
+    .text{
+        
+        top: 50%;
+    }
+    
+}

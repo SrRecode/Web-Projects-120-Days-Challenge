@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #242123;
+}
+.part1 {
+  height: 100%;
+  width: 26%;
+}
+.part2 {
+  height: 100%;
+  width: 67%;
+  background-image: url(/images/Chris\ Hemsworth\ He\ is\ seriously\ the\ best\ looking\ man\ alive!.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #01010163;
+}
+.part3 {
+  height: 100%;
+  width: 7%;
+}
+.text {
+  position: absolute;
+
+  width: 400px;
+  
+  top: 50%;
+  left: 15%;
+  transform: translate(0, -50%);
+}
+.text h1 {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-transform: uppercase;
+  line-height: 50px;
+  letter-spacing: 8px;
+}
+.smallimage{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    background-image: url('/images/100\ Popular\ Men\'s\ Haircuts\ and\ Hairstyles.jpeg');
+    background-size: cover;
+    
+}
+.overlaysecond{
+    height: 100%;
+    width: 100%;
+    background-color: #0101012c; 
+}
+.verticaltext{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    right: -32%
+
+   ;
+}
+.verticaltext h1{
+    font-size: 50px;
+    font-weight: 900;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 2px;
+    color: transparent;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    
+    
+}
+.nav{
+    position: absolute;
+    width: 400px;
+    color: #ffffff;
+    top: 5%;
+    left: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav h5{
+    
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    transform: translateX(40px);
+    text-transform: uppercase;
+    line-height: 15px;
+    letter-spacing: 8px;
+    cursor: pointer;
+}
+
+.nav img{
+    
+    height: 50px;
+    width: 50px;
+    filter: invert(100%);
+}
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 5px;
+  }
+  .smallimage {
+    height: 300px;
+    width: 200px;
+  }
+    .nav {
+        left: -6%;
+    }
+    
+  .nav h5 {
+    font-size: 15px;
+    line-height: 10px;
+    letter-spacing: 5px;
+  }
+  .verticaltext h1{
+    font-size: 30px;
+    letter-spacing: 10px;
+    
+    transform: translateY(-140px);
+    
+    
+    
+  }
+}
