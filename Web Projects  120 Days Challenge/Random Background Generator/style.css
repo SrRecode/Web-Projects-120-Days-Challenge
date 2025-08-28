@@ -1,0 +1,52 @@
+ :root {
+        --fg: #111;
+        --chip-bg: rgba(255, 255, 255, 0.6);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        transition: background 500ms ease;
+        font-family: system-ui, Arial, sans-serif;
+        color: var(--fg);
+      }
+      .panel {
+        background: var(--chip-bg);
+        backdrop-filter: blur(8px);
+        border-radius: 16px;
+        padding: 18px 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      button {
+        border: 0;
+        padding: 10px 14px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: 600;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+      }
+      .chip {
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        user-select: all;
+        background: rgba(255, 255, 255, 0.8);
+      }
+      .toggle {
+        display: inline-flex;
+        gap: 6px;
+        align-items: center;
+      }
+      .hint {
+        opacity: 0.7;
+        font-size: 12px;
+        width: 100%;
+      }
